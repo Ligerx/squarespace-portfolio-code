@@ -5,6 +5,33 @@ I'm using index pages + navigation to show 'progress' and allow smooth scrolling
    display: none !important;
 }
 
+/* Force Image Card to stack at a larger breakpoint.
+By default, the Image Card goes full width at 454px and it squishes the text a lot. I just chose the new breakpoint by eye.
+https://schwartz-edmisten.com/blog/force-an-image-card-to-stack-on-tablet-in-squarespace
+*/
+@media screen and (max-width: 740px) {
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
+      display: block!important;
+  }
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
+    width: 100%;
+    // mimicking the Card Separation style setting in Squarespace
+  	margin-top: 4%;
+  }
+  .sqs-block-image .design-layout-card:not(.sqs-narrow-width)>div:first-child {
+	width: 100%;
+  }
+}
+
+/* Add additional bottom spacing to Image Card on mobile.
+Uses the same above breakpoint.
+*/
+@media screen and (max-width: 740px) {
+  .sqs-block-image {
+      margin-bottom: 24px;
+  }
+}
+
 /* Index page banner sections only go down to min-height: 50vh in the GUI.
 Manually overriding that to be smaller.
 Also, manually hiding the scroll-down-indicator with CSS.
