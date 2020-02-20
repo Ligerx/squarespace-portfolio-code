@@ -11,7 +11,7 @@ https://schwartz-edmisten.com/blog/force-an-image-card-to-stack-on-tablet-in-squ
 */
 @media screen and (max-width: 740px) {
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) {
-      display: block!important;
+	display: block!important;
   }
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width) .image-card-wrapper {
     width: 100%;
@@ -21,14 +21,10 @@ https://schwartz-edmisten.com/blog/force-an-image-card-to-stack-on-tablet-in-squ
   .sqs-block-image .design-layout-card:not(.sqs-narrow-width)>div:first-child {
 	width: 100%;
   }
-}
-
-/* Add additional bottom spacing to Image Card on mobile.
-Uses the same above breakpoint.
-*/
-@media screen and (max-width: 740px) {
-  .sqs-block-image {
-      margin-bottom: 24px;
+  
+  // Adding additional bottom spacing for the image card at the breakpoint and below
+  .sqs-block-image .design-layout-card {
+    margin-bottom: 24px;
   }
 }
 
