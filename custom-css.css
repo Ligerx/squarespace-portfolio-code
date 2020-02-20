@@ -1,0 +1,25 @@
+/* Hiding Index navigation on the home page.
+I'm using index pages + navigation to show 'progress' and allow smooth scrolling between sections on project pages. The home page uses an index page to include a CTA button that scrolls down, but navigation is not necessary here.
+*/
+#collection-5e3e403bced26d7c65a61565 .Index-nav {
+   display: none !important;
+}
+
+/* Index page banner sections only go down to min-height: 50vh in the GUI.
+Manually overriding that to be smaller.
+Also, manually hiding the scroll-down-indicator with CSS.
+
+I'm using repeated class selectors to increase specificity instead of using !important.
+
+I don't think I'm actually using this stuff right now, so it should be safe to delete it all.
+*/
+.Index-page--has-image.Index-page--has-image.Index-page--has-image {
+  min-height: 250px;
+}
+.Index-page--has-image .Index-page-content {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.Index-page-scroll-indicator.Index-page-scroll-indicator {
+  display: none;
+}
