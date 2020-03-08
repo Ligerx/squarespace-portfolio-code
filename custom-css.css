@@ -46,3 +46,13 @@ I don't think I'm actually using this stuff right now, so it should be safe to d
 .Index-page-scroll-indicator.Index-page-scroll-indicator {
   display: none;
 }
+
+/* Custom quote block styling.
+Note - this is the quote styling within a text block, not the Block Quote.
+*/
+.sqs-block-html blockquote {
+    border-left-width: 3px;
+    padding-left: 1em;
+    color: #1565c1;
+    font-style: italic;
+}
