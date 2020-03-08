@@ -52,6 +52,7 @@ Note - this is the quote styling within a text block, not the Block Quote.
 */
 .sqs-block-html blockquote {
     border-left-width: 3px;
+    border-left-color: #1565c1;
     padding-left: 1em;
     color: #1565c1;
     font-style: italic;
