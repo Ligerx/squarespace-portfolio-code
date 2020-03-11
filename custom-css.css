@@ -57,3 +57,14 @@ Note - this is the quote styling within a text block, not the Block Quote.
     color: #1565c1;
     font-style: italic;
 }
+
+/* In Vivid, add a border to the demo gifs.
+*/
+[data-collection-id="5e4b2638c1cd5653bfbe0af9"] {
+  [data-image-id="5e685d95d318640a883a5754"],
+  [data-image-id="5e685f571e94eb74c1a22c6f"],
+  [data-image-id="5e6861d2419da729fd3d6a1a"],
+  [data-image-id="5e685f8e6376a40e0de4910c"] {
+    border: 2px solid #BDBDBD;
+  }
+}
