@@ -10,7 +10,6 @@ I'm using index pages + navigation to show 'progress' and allow smooth scrolling
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   // ~ escapes the string so calc() doesn't get messed up by SASS
   // -100px is for the header on desktop mode. I'm not bothering with the header responsive breakpoint right now.
   min-height: ~"calc(75vh - 100px)";
