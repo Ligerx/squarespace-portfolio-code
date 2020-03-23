@@ -10,9 +10,15 @@ I'm using index pages + navigation to show 'progress' and allow smooth scrolling
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   // ~ escapes the string so calc() doesn't get messed up by SASS
   // -100px is for the header on desktop mode. I'm not bothering with the header responsive breakpoint right now.
   min-height: ~"calc(75vh - 100px)";
+  
+  // For some reason, adding flex-box makes the width of the inner text shrink. Manually resetting the width fixes this.
+  .Index-page-content {
+    width: 100%;
+  }
 }
 
 /* Force Image Card to stack at a larger breakpoint.
@@ -36,25 +42,6 @@ https://schwartz-edmisten.com/blog/force-an-image-card-to-stack-on-tablet-in-squ
   .sqs-block-image .design-layout-card {
     margin-bottom: 24px;
   }
-}
-
-/* Index page banner sections only go down to min-height: 50vh in the GUI.
-Manually overriding that to be smaller.
-Also, manually hiding the scroll-down-indicator with CSS.
-
-I'm using repeated class selectors to increase specificity instead of using !important.
-
-I don't think I'm actually using this stuff right now, so it should be safe to delete it all.
-*/
-.Index-page--has-image.Index-page--has-image.Index-page--has-image {
-  min-height: 250px;
-}
-.Index-page--has-image .Index-page-content {
-  padding-top: 0;
-  padding-bottom: 0;
-}
-.Index-page-scroll-indicator.Index-page-scroll-indicator {
-  display: none;
 }
 
 /* Custom quote block styling.
